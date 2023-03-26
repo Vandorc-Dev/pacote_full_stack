@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Redirecionamento automático</title>
+  </head>
+  <body>
+    <div id="container">
+        <p>Redirecionamento automatico após <span id="contador">6</span> segundos.</p>
+        <a href="https://go.hotmart.com/K80785490V" class="image"><img src="img/full-stack-padrao-novo.png" alt=""></a>
+    </div>
+    <script>
+      var contador = 5; // definimos a variável contador com o número de segundos
+      setInterval(function() { // usamos a função setInterval para atualizar o contador a cada segundo
+        contador--;
+        document.getElementById("contador").innerHTML = contador; // atualizamos o texto do elemento HTML com o contador
+        if (contador == 0) { // quando o contador chegar a zero, redirecionamos a página
+          window.location.href = "https://go.hotmart.com/K80785490V";
+        }
+      }, 1000); // atualizamos o contador a cada 1000 milissegundos (1 segundo)
+    </script>
+  </body>
+</html>
+
